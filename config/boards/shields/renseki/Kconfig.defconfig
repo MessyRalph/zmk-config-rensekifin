@@ -1,0 +1,15 @@
+if SHIELD_CORNE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Renseki"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_RENSEKI_LEFT || SHIELD_RENSEKI_RIGHT
+
+config ZMK_SPLIT
+    default y
+endif
